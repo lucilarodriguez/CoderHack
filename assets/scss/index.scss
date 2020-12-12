@@ -1,0 +1,26 @@
+@import "utilities/navbar";
+@import "utilities/footer";
+
+.card {
+	height: 85vh;
+
+	.card-img-overlay {
+		top:50%;
+		@mixin base {
+			margin:25px;
+		}
+
+		* {
+			@include base;
+
+		}
+	}
+}
+
+section {
+	height: 100vh;
+}
+
+
+
+

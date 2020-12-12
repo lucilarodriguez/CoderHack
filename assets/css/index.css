@@ -1,0 +1,42 @@
+body {
+  width: 100%;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar {
+  height: 77px;
+  border-bottom: 0.5px solid black;
+}
+nav.navbar li {
+  margin-right: 30px;
+}
+
+body {
+  width: 100%;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  padding-bottom: 10px;
+  border-top: 0.5px solid black;
+}
+
+.card {
+  height: 85vh;
+}
+.card .card-img-overlay {
+  top: 50%;
+}
+.card .card-img-overlay * {
+  margin: 25px;
+}
+
+section {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=index.css.map */
