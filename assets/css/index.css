@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   width: 100%;
   height: 200vh;
@@ -25,18 +29,200 @@ footer {
   border-top: 0.5px solid black;
 }
 
-.card {
+header .card {
+  border-radius: 0 !important;
   height: 85vh;
 }
-.card .card-img-overlay {
-  top: 50%;
+header .card .card-img-overlay {
+  top: 25%;
 }
-.card .card-img-overlay * {
+header .card .card-img-overlay * {
   margin: 25px;
+}
+header .card .card-img-overlay h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+}
+header .card .card-img-overlay button {
+  border: none;
+  width: 35vh;
+  height: 6vh;
+  background-color: #26ABFF;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  color: white;
+  border-radius: 23px;
 }
 
 section {
-  height: 100vh;
+  padding: 0;
+}
+section .banner {
+  position: relative;
+  height: 560px;
+}
+section .banner img {
+  position: absolute;
+  z-index: -1;
+  filter: opacity(80%);
+}
+section .banner .bannerText {
+  width: 1294px;
+  font-family: "Rubik", sans-serif;
+  font-size: 58px;
+  color: white;
+  text-align: center;
+  transform: translateY(100%);
+}
+section .content1 {
+  position: relative;
+}
+section .content1 .grafos {
+  position: relative;
+}
+section .content1 .grafos #grafoCruz {
+  position: absolute;
+  top: -80px;
+  left: 150px;
+}
+section .content1 .grafos #grafoCruz2 {
+  position: absolute;
+  top: 450px;
+  left: 55%;
+}
+section .content1 .grafos #grafoElipseVerde {
+  position: absolute;
+  top: 100px;
+}
+section .content1 .grafos #grafoElipseVerde2 {
+  position: absolute;
+  top: -30px;
+}
+section .content1 .grafos #grafoElipse2 {
+  position: absolute;
+  left: 8%;
+  top: -125px;
+  transform: scale(0.7);
+}
+section .content1 .grafos #flechas {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 5%;
+  top: 300px;
+}
+section .content1 .grafos #flechas svg {
+  margin-bottom: 15px;
+}
+section .content1 .grafos #grafoGrupo {
+  position: absolute;
+  right: 0;
+  top: 200vh;
+}
+section .content1 .quienesSomos {
+  margin-top: 100px;
+}
+section .content1 .quienesSomos .card {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  height: 80%;
+}
+section .content1 .quienesSomos .card img {
+  border-radius: 100%;
+}
+section .content1 .quienesSomos .card .card-body {
+  margin-left: 80px;
+}
+section .content1 .quienesSomos .card .card-title {
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  color: #26ABFF;
+}
+section .content1 .quienesSomos .card .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #656462;
+  width: 500px;
+}
+section .content1 .quienesSomos .card button {
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: #26ABFF;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 23px;
+}
+section .content1 .formateEn {
+  margin-bottom: 0;
+  margin-top: 200px;
+}
+section .content1 .formateEn .card {
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 600px;
+}
+section .content1 .formateEn .card img {
+  border-radius: 100%;
+}
+section .content1 .formateEn .card .card-body {
+  transform: translateY(-70px);
+}
+section .content1 .formateEn .card .card-title {
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  color: rgba(114, 221, 30, 0.63);
+}
+section .content1 .formateEn .card .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #656462;
+  width: 500px;
+}
+section .content1 .formateEn .card button {
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: #A2DD1E;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 23px;
+}
+section .content2 .bannerSep {
+  padding-top: 10px;
+  height: 100px;
+  background-color: #7EC8F8;
+  font-family: "Rubik", sans-serif;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+section .content2 .sumate {
+  margin-top: 10vh;
+  width: 75%;
+  height: 80vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #656462;
+  text-align: center;
+}
+section .content2 .sumate button {
+  width: 30vh;
+  margin-top: 10vh;
+  display: block;
+  border: none;
+  color: white;
+  border-radius: 23px;
+  background-color: #26ABFF;
 }
 
 /*# sourceMappingURL=index.css.map */

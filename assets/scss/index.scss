@@ -1,26 +1,187 @@
 @import "utilities/navbar";
 @import "utilities/footer";
 
-.card {
-	height: 85vh;
 
-	.card-img-overlay {
-		top:50%;
-		@mixin base {
-			margin:25px;
-		}
+header {
+	.card {
+		border-radius: 0 !important;
+		height: 85vh;
 
-		* {
-			@include base;
+		.card-img-overlay {
+			top:25%;
+			@mixin base {margin:25px;}
+			* {@include base;}
+			h5 {font:{family:$titulo;size:40px;}}
+			button {
+				border:none;
+				width:35vh;height: 6vh;
+				background-color:$azul1;
+				font:{family:$titulo;size:20px;}
+				color:white;
+				border-radius:23px;
 
+			}
 		}
 	}
 }
 
-section {
-	height: 100vh;
-}
 
+section {
+	padding: 0;
+	.banner {
+		position: relative;
+		height:560px;
+		img {position: absolute;
+			z-index:-1;
+			filter:opacity(80%);}
+		.bannerText {
+			width: 1294px;
+			font:{family:$titulo;size:58px;}
+			color:white;
+			text-align: center;
+			transform: translateY(100%);
+		}
+	}
+	
+	.content1 {
+		position:relative;
+		.grafos {
+			position: relative;
+			#grafoCruz{
+				position:absolute;
+				top:-80px;
+				left: 150px;
+			}
+			#grafoCruz2{
+				position:absolute;
+				top:450px;
+				left: 55%;
+			}
+			#grafoElipseVerde{
+				position: absolute;
+				top:100px;
+			}
+			#grafoElipseVerde2{
+				position:absolute;
+				top:-30px;
+			}
+
+			#grafoElipse2 {
+				position: absolute;
+				left:8%;
+				top:-125px;
+				transform: scale(0.7);
+			}
+			#flechas {
+				display: flex;
+				flex-direction: column;
+				position:absolute;
+				svg {margin-bottom: 15px;}
+				right: 5%;
+				top:300px;
+			}
+			#grafoGrupo {
+				position: absolute;
+				right:0;
+				top:200vh;
+			}
+		}
+		.quienesSomos {
+			margin-top: 100px;
+			.card {
+				background-color:transparent;
+				border:none;
+				width: 80%;
+				height: 80%;
+				img {border-radius:100%;}
+				.card-body {margin-left:80px;}
+				.card-title {
+					margin-bottom: 20px;
+					font:{family:$titulo;size:30px;};
+					color:$azul1;}
+				.card-text {
+					font:{family:$texto;size:20px;};
+					color:$negro;
+					width: 500px;}
+				button {
+					margin-top: 50px;
+					font:{family:$texto;size:20px;};
+					color:white;
+					background-color:$azul1;
+					width: 300px;
+					height: 50px;
+					border:none;
+					border-radius:23px;
+
+				}
+			}
+		}
+
+		.formateEn {
+			margin-bottom: 0;
+			margin-top: 200px;
+			.card {
+				overflow: hidden;
+				background-color:transparent;
+				border:none;
+				width: 100%;
+				height: 600px;
+				img {border-radius:100%;}
+				.card-body {transform:translateY(-70px);}
+				.card-title {
+					margin-bottom: 20px;
+					font:{family:$titulo;size:30px;};
+					color:$verde1;}
+				.card-text {
+					font:{family:$texto;size:20px;};
+					color:$negro;
+					width: 500px;}
+				button {
+					margin-top: 50px;
+					font:{family:$texto;size:20px;};
+					color:white;
+					background-color:$verde2;
+					width: 300px;
+					height: 50px;
+					border:none;
+					border-radius:23px;
+
+				}
+			}
+		}
+	}
+
+	.content2 {
+		.bannerSep {
+			padding-top:10px;
+			height:100px;
+			background-color:$azul2;
+			font:{family:$titulo;size:60px;}
+			color:white;
+			text-align: center;
+		}
+		.sumate {
+			margin-top:10vh;
+			width: 75%;
+			height: 80vh;
+			font:{family:$texto;size:30px;}
+			color:$negro;
+			text-align: center;
+
+			button {
+				width: 30vh;
+				margin-top: 10vh;
+				display: block;
+				border:none;
+				color:white;
+				border-radius: 23px;
+				background-color:$azul1;
+
+			}
+		}
+	}
+
+}
 
 
 

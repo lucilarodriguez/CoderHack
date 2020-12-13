@@ -8,9 +8,19 @@ body {
 
 // Aqui van los valores que vamos a usar constantemente como colores y tipografias
 
-// $color1:
-// $color2:
-// $color3:
-// $color4:
+$azul1:#26ABFF;
+$azul2:#7EC8F8;
+$verde1:rgba(114, 221, 30, 0.63);
+$verde2:#A2DD1E;
+$naranja1:rgba(255, 166, 0, 0.71);
+$naranja2:#FFA600;
+$negro:#656462;
 
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$titulo:'Rubik', sans-serif;
+$texto:'Poppins', sans-serif;;
